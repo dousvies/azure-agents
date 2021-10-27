@@ -14,7 +14,7 @@ stages:
   jobs:
     - job: buildImage
       displayName: Build Managed Image
-      container: dousvies/ci-packer:latest
+      container: dousvies/ci-packer:azure
       steps:
       - bash: |
           export PKR_VAR_client_id=$(client_id)
