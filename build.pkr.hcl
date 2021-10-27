@@ -5,7 +5,7 @@ source "azure-arm" "agent" {
   subscription_id = var.subscription_id
 
   managed_image_resource_group_name = "cicd"
-  managed_image_name     = "cicd_default_ubuntu_1804"
+  managed_image_name     = "cicd_default_ubuntu_1804_${var.image_tag}"
 
   os_type         = "Linux"
   image_publisher = "Canonical"
