@@ -8,7 +8,7 @@ trigger:
     - '*'
 pool: selfhostedlinux
 variables:
-- group: packer-auth
+- group: ci-auth
 stages:
 - stage: Build
   jobs:
